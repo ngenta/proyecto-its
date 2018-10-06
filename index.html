@@ -20,30 +20,31 @@ background-repeat: no-repeat;
 background-position: center center;
 background-size:100% 100%;
 background-size: cover;
-        
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;      
 } 
         
-/* Imagen utilizada en pantallas de anchura 480 px y superior */
-@media (min-width: 480px) {
+
+
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
     
-    #body {
-        background: url("imagenes/negro.jpg");
+    #body{
+        background-image: url(imagenes/negro.jpg)
     }
-}
+        }
 
-/* Imagen utilizada en pantallas de anchura 768 px y superior */
+// Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
-    #body {
-        background: url("imagenes/negro.jpg");
+      #body{
+        background-image: url(imagenes/negro.jpg)
     }
-}
+        }
 
-/* Imagen utilizada en pantallas de anchura 1200 px y superior */
-@media (min-width: 1200px) {
-    body {
-        background: url("background-1200w.png");
-    }
-}
+
         
 
 .break-word {

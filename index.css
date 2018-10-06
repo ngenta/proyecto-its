@@ -20,4 +20,19 @@ background-repeat: no-repeat;
 background-position: center center;
 }
 
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+    
+    #body{
+        background-image: url(imagenes/negro.jpg)
+    }
+        }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+      #body{
+        background-image: url(imagenes/negro.jpg)
+    }
+        }
+
 
