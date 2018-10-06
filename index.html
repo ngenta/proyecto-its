@@ -18,19 +18,16 @@ background-image: url(imagenes/fondodelapag.jpg) ;
 background-attachment: fixed;
 background-repeat: no-repeat;
 background-position: center center;
-background-size:100% 100%;
+
 background-size: cover;
--webkit-background-size: cover;
--moz-background-size: cover;
--o-background-size: cover;
-background-size: cover;      
+      
 } 
         
 
 
 
 // Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) {
+@media (max-width: 576px) {
     
     #body{
         background-image: url(imagenes/negro.jpg)
@@ -38,7 +35,7 @@ background-size: cover;
         }
 
 // Medium devices (tablets, 768px and up)
-@media (min-width: 768px) {
+@media (max-width: 768px) {
       #body{
         background-image: url(imagenes/negro.jpg)
     }
