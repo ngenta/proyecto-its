@@ -23,6 +23,29 @@ background-size: cover;
       
 } 
         
+ #inicio{
+     margin-top: 50px;
+background-image: url(imagenes/banner.jpg) ;
+background-attachment: fixed;
+background-repeat: no-repeat;
+background-position: center center;
+background-size:100% 100%;
+background-size: cover;    
+        }
+        
+@media (min-width: 576px) {
+    #inicio{
+        background-image: hidden;
+    }
+        
+        }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+         #inicio{
+        background-image: hidden;
+    }
+        }
 
 
 
@@ -67,7 +90,7 @@ background-size: cover;
 </nav>
 <div class="container-fluid">
 <div class="row">
-<div class= "col-12 col-md-12 col-sm-12" id="inicio" class="jumbotron" style="background-color: rgba(255,255,255,0.2) ; margin-top: 80px;">
+<div class= "col-12 col-md-12 col-sm-12" id="inicio" class="jumbotron">
     <div class="container-fluid">
    <div class="row">
     <div class="col-12 col-sm-12 col-md-12">
@@ -124,50 +147,35 @@ background-size: cover;
   </div>
 </div>
             
-    
-
-
-    <div class="container-fluid" style="margin-top: 30px" id="nosotros">
-    <div class="row">
-    <div class="col-md-6 col-sm-12">
-    <div class="jumbotron jumbotron-fluid" style="background-color: rgba(255,255,255,0.2) ;">
-  <div class="container">
-      <center>
-    <h1 class="display-4" style="color: white">Acerca de nuestro grupo</h1>
-      <center>
-      <img style="text-align: center" src="imagenes/como%20el%20anus(1).png">
-      </center>
-    <p class="lead" style="color: white">Somos un grupo de estudiantes de el Instituto Tecnológico Superior que realiza el segundo año del curso de informática. Como proyecto de fin de año debemos crear los planos de una arena, diseñar este sitio web y desarrollar un software.</p>
-    </center>
-  </div>
-</div> 
-    </div>
-    <div class="col-md-6 col-sm-12">
-    <div class="jumbotron jumbotron-fluid" style="background-color: rgba(255,255,255,0.2) ;">
-  <div class="container">
-    <center>
-    <h1 class="display-4" style="color: white">Acerca de nuestro software</h1>
-    <center><img src="imagenes/llaves(1).png"></center>
-    <p class="lead" style="color: white">El software que debemos crear tiene como objetivo vender entradas a los clientes para que puedan asisitir a los eventos que promocionamos aquí. Este programa esta desarrollado en lenguaje Java y su base de datos hecha en SQL server</p>
-      </center>  
-</div>
-</div>    
-    </div>
-    </div>
-    </div>
-    <div class="container-fluid">
+    <div class="container-fluid" id="eventoos">
     <div class="row">
     <div class="col-md-6">
-     <div class="jumbotron jumbotron-fluid" style="background-color: rgba(255,255,255,0.2) ;">
+     <div class="jumbotron jumbotron-fluid" style="background-color: rgba(255,255,255,0.2) ; margin-top: 20px">
   <div class="container">
     <center>
     <h1 class="display-4" style="color: white">Nuestros eventos</h1>
     
-    <p class="lead" style="color: white">Aquí a la derecha hay un breve recorrido por nuestros eventos mas esperados, clickea en más información para checkar que tribunas estan habilitadas</p>
+    <p class="lead" style="color: white">Aquí debajo hay un breve recorrido por nuestros eventos mas esperados, clickea en más información para checkar que tribunas estan habilitadas</p>
       </center>  
 </div>
 </div>    
-  </div>
+  </div>    <div class="col-md-6 col-sm-12 col-12" style="margin-top: 20px;">
+    <div class="jumbotron jumbotron-fluid" style="background-color: rgba(255,255,255,0.2) ;">
+  <div class="container">
+    <center>
+    <h1 class="display-4" style="color: white">Nuestro teaser!</h1>
+    
+    <p class="lead" style="color: white">Aquí debajo se puede observar un poco de lo que puede ofrecer nuestro equipo, además de porgramar entre otras cosas, como verán no se nos da mal el diseño...</p>
+      </center>  
+</div>
+</div>    
+
+    </div>
+        </div>
+    </div>    
+    
+    <div class="container-fluid">
+    <div class="row">
     <div  class="col-12 col-sm-12 col-md-6">
   <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
   <ol class="carousel-indicators">
@@ -218,8 +226,10 @@ background-size: cover;
   </a>
 </div>
 </div>
+<div class="col-md-6 col-sm-12 col-12" ><video style="width: 100%; height: 100% " src="imagenes/trailer.mp4" controls></video></div>
 </div>
 </div>
+ 
 
     <div class="modal fade" id="modalabel" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered" role="document">
@@ -272,9 +282,44 @@ background-size: cover;
             </center>
       </div>
     </div>
-  </div>
-</div>
+  
+
+   
+    </div>
+    </div>
     
 
+
+
+    <div class="container-fluid" style="margin-top: 30px" id="nosotros">
+    <div class="row">
+    <div class="col-md-6 col-sm-12">
+    <div class="jumbotron jumbotron-fluid" style="background-color: rgba(255,255,255,0.2) ;">
+  <div class="container">
+      <center>
+    <h1 class="display-4" style="color: white">Acerca de nuestro grupo</h1>
+      <center>
+      <img style="text-align: center" src="imagenes/como%20el%20anus(1).png">
+      </center>
+    <p class="lead" style="color: white">Somos un grupo de estudiantes de el Instituto Tecnológico Superior que realiza el segundo año del curso de informática. Como proyecto de fin de año debemos crear los planos de una arena, diseñar este sitio web y desarrollar un software.</p>
+    </center>
+  </div>
+</div> 
+    </div>
+    <div class="col-md-6 col-sm-12">
+    <div class="jumbotron jumbotron-fluid" style="background-color: rgba(255,255,255,0.2) ;">
+  <div class="container">
+    <center>
+    <h1 class="display-4" style="color: white">Acerca de nuestro software</h1>
+    <center><img src="imagenes/llaves(1).png"></center>
+    <p class="lead" style="color: white">El software que debemos crear tiene como objetivo vender entradas a los clientes para que puedan asisitir a los eventos que promocionamos aquí. Este programa esta desarrollado en lenguaje Java y su base de datos hecha en SQL server</p>
+      </center>  
+</div>
+</div>    
+    </div>
+    </div>
+    </div>
+
+    
 </body>
 </html>
